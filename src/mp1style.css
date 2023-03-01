@@ -189,7 +189,7 @@ section{
     position: relative;
 }
 .imagebox{
-    position: relative;
+    position: inherit;
     min-height: 55svh;
     margin-right: 60vw;
 } 
@@ -232,7 +232,8 @@ img{
 input[type="text"],
 input[type="tel"],
 input[type="email"],
-input[type="number"]{
+input[type="number"],
+input[type="password"]{
     background: transparent;
     border: none;
     border-bottom: 2px solid #fff;
@@ -243,11 +244,15 @@ input[type="number"]{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,138,148,1) 35%, rgba(0,212,255,1) 100%);
     color: #fff;
 }
-#mclose, #submit{
+#close, #submit{
     font-weight: 400;
     color: #fff;
     background-color: #3d535f;
     box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+}
+.valid-feedback{
+    color: #fff;
+    padding-left: 10px;
 }
 @keyframes animateblob {
     0%,100%{
@@ -280,7 +285,7 @@ body::before{
         overflow: auto;
     }
     #brand{
-        font-size: 5rem;
+        font-size: 2rem;
     }
     .row{
         display: flex;
@@ -307,7 +312,6 @@ body::before{
         border-bottom: 1px solid #008A94;
         background: transparent;
     }
-   
 }
 
 @media screen and (min-width: 992px){
@@ -320,6 +324,15 @@ body::before{
 @media screen and (max-width: 576px) {
     #imagecontainer{
         display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+     .navbar-toggler{
+        font-size: 2rem;  
+        margin-top: -50px;
+        width: 30px;
+        margin-left: 10px;
     }
 }
 

@@ -100,42 +100,48 @@
               <h1 class="modal-title fs-2" id="StaticRegistrationLabel">Be One Of Us!</h1>
             </div>
             <div class="modal-body d-flex justify-content-center">
-                <form novalidate autocomplete="off">
+                <form novalidate autocomplete="off" id="form">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="First" placeholder="Enter your first name" required>
+                        <input type="text" class="form-control" id="first" placeholder="Enter your first name" required>
                         <label for="fname">First Name</label>
-                        <div class="invalid-feedback">Invalid First Name</div>
-                        <div class="valid-feedback">Valid First Name</div>
+                        <div class="invalid-feedback"></div>
+                        <div class="valid-feedback"></div>
                     </div>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id ="Last"placeholder="Enter your last name" required>
+                        <input type="text" class="form-control" id ="last"placeholder="Enter your last name" required>
                         <label for="lname">Last Name</label>
-                        <div class="invalid-feedback">Invalid Last Name</div>
-                        <div class="valid-feedback">Valid Last Name</div>
+                        <div class="invalid-feedback"></div>
+                        <div class="valid-feedback"></div>
                     </div>
                     <div class="form-floating">
                         <input type="text" class="form-control " id ="user"placeholder="Enter your Username" required>
                         <label for="Username">Username</label>
-                        <div class="invalid-feedback">Invalid Username</div>
-                        <div class="valid-feedback">Valid Username</div>
+                        <div class="invalid-feedback"></div>
+                        <div class="valid-feedback"></div>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control " id ="pass"placeholder="Enter your Password" required>
+                        <label for="password">Password</label>
+                        <div class="invalid-feedback"></div>
+                        <div class="valid-feedback"></div>
                     </div>
                     <div class="form-floating">
                         <input type="email" class="form-control " id="email" placeholder="Enter your email" required>
                         <label for="email">Email</label>
-                        <div class="invalid-feedback">Invalid Email</div>
-                        <div class="valid-feedback">Valid Email</div>
+                        <div class="invalid-feedback"></div>
+                        <div class="valid-feedback"></div>
                     </div>
                     <div class="form-floating">
                         <input type="tel" inputmode="numeric" class="form-control" id="tel" placeholder="Enter your contact number" required>
                         <label for="cnumber">Contact Number</label>
-                        <div class="invalid-feedback">Invalid Contact Number</div>
-                        <div class="valid-feedback">Valid Contact Number</div>
+                        <div class="invalid-feedback"></div>
+                        <div class="valid-feedback"></div>
                     </div>
                     <div class="form-floating">
-                        <input type="number" max="70" min="0" class="form-control" id="age" placeholder="Enter your Age" required>
+                        <input type="number" max="70" min="5" class="form-control" id="age" placeholder="Enter your Age" required>
                         <label for="age">Age</label>
-                        <div class="invalid-feedback">Age is Not Correct</div>
-                        <div class="valid-feedback">Age is Correct</div>
+                        <div class="invalid-feedback"></div>
+                        <div class="valid-feedback"></div>
                     </div>
                 <label for="mstatus" class="form-label mt-3 ms-1">What type of membership would you like?</label>
                 <div class="input-group">
@@ -144,11 +150,10 @@
                     <input  type="radio" name="mstatus"> 
                     <label class="form-check-label ms-2" for="Standard">Standard</label>
                 </div>
-                <p id="warning">Note: If you want to go back, Please press close.</p>
             </div>
             <div class="modal-footer">
               <p id="warning">Note: If you want to go back, Please press close.</p>
-              <button type="button" class="btn rounded-pill" data-bs-dismiss="modal" id="mclose">Close</button>
+              <button type="button" class="btn rounded-pill" data-bs-dismiss="modal" id="close">Close</button>
               <button class="btn rounded-pill" id="submit">Submit</button>
             </div>
                 </form>
