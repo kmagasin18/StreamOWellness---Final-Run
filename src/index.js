@@ -108,7 +108,6 @@
         }
 
         if (form.checkValidity()) {
-            // submit form
             form.reset();
             form.classList.remove('is-valid');
         }
@@ -118,7 +117,7 @@
         if (first.value.trim().length < 3 || first.value.trim().match(invalid_char)) {
             first.classList.add('is-invalid');
             first.classList.remove('is-valid');
-            setError(first, 'Invalid format. Must be Alphanumeric');
+            setError(first, 'Invalid first name. Must be at least 3 letters');
         } else {
             first.classList.remove('is-invalid');
             first.classList.add('is-valid');
@@ -142,7 +141,7 @@
         if (user.value.trim().length < 5 || user.value.trim().match(invalid_user)) {
             user.classList.add('is-invalid');
             user.classList.remove('is-valid');
-            setError(user, 'Invalid format. Must be at least 3 letters');s
+            setError(user, 'Invalid format. Must be Alphanumeric');s
         } else {
             user.classList.remove('is-invalid');
             user.classList.add('is-valid');
